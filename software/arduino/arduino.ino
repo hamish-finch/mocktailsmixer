@@ -77,6 +77,8 @@ void loop() {
 
       // increment command index
       index++;
+      // overflow protection
+      index %= MAX_CMD_SIZE;
     }
 
     // else process entire command
